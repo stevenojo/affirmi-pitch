@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AFFIRMI — AppSpace — Angel Pitch</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+  :root{
+    --bg:#0a0e1a; --panel:#121828; --ink:#f4f6fb; --dim:#9aa4bf;
+    --volt:#c8ff2e; --orange:#ff7a3d; --line:#232c44;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:#000; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; color:var(--ink)}
+  .slide{width:1280px; height:720px; padding:64px 72px; background:var(--bg);
+    position:relative; overflow:hidden; page-break-after:always; margin:0 auto 16px;
+    display:flex; flex-direction:column}
+  .slide::after{content:""; position:absolute; right:-120px; top:-120px; width:340px; height:340px;
+    border-radius:50%; background:radial-gradient(circle,rgba(200,255,46,.14),transparent 70%)}
+  .kicker{color:var(--volt); font-weight:800; letter-spacing:.22em; font-size:14px; text-transform:uppercase}
+  h1{font-size:64px; line-height:1.02; font-weight:900; letter-spacing:-.02em}
+  h2{font-size:44px; line-height:1.05; font-weight:900; letter-spacing:-.01em; margin-bottom:28px}
+  h2 em{font-style:normal; color:var(--volt)}
+  p,li{font-size:21px; line-height:1.5; color:var(--dim)}
+  .big{font-size:26px; color:var(--ink)}
+  .row{display:flex; gap:24px}
+  .card{flex:1; background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:28px}
+  .card .num{font-size:46px; font-weight:900; color:var(--volt)}
+  .card .lbl{font-size:16px; letter-spacing:.08em; text-transform:uppercase; color:var(--dim); margin-top:8px}
+  .card .sub{font-size:15px; color:var(--dim); margin-top:6px}
+  ul{margin-left:22px}
+  li{margin-bottom:12px}
+  b{color:var(--ink)}
+  .foot{position:absolute; bottom:28px; left:72px; right:72px; display:flex; justify-content:space-between;
+    font-size:13px; color:#55607e; letter-spacing:.12em; text-transform:uppercase}
+  .dark .num{color:var(--orange)}
+  table{border-collapse:collapse; width:100%}
+  td,th{border-bottom:1px solid var(--line); padding:12px 8px; font-size:20px; text-align:left}
+  th{color:var(--dim); font-size:15px; text-transform:uppercase; letter-spacing:.08em}
+  td.n{font-weight:800; color:var(--volt); font-size:24px}
+</style>
+</head>
+<body>
+
+<!-- 1 HOOK -->
+<section class="slide">
+  <div style="margin:auto 0">
+    <div class="kicker">Affirmi &nbsp;·&nbsp; AppSpace</div>
+    <h1 style="margin-top:24px">Youth sports clubs run on<br>chaos. <span style="color:var(--volt)">We run them on rails.</span></h1>
+    <p class="big" style="margin-top:28px; max-width:900px">AppSpace is the operating system for club sports: registration, payments, rosters, documents, team chat and live game streaming — in one app parents actually open.</p>
+    <p style="margin-top:20px"><b style="color:var(--volt)">$500K collected</b> for real clubs in the first season. One club joined 10 weeks ago. Another 3 days ago.</p>
+  </div>
+  <div class="foot"><span>Affirmi · Confidential</span><span>2026</span></div>
+</section>
+
+<!-- 2 PROBLEM -->
+<section class="slide">
+  <h2>Clubs are duct-taped together: <em>six tools, zero truth</em></h2>
+  <div class="row">
+    <div class="card"><div class="big">Registration</div><p>Google Forms + paper waivers. Directors retype rosters by hand.</p></div>
+    <div class="card"><div class="big">Payments</div><p>Zelle and Venmo to a personal phone. Nobody can say who paid for what.</p></div>
+    <div class="card"><div class="big">Comms</div><p>Six group chats per team. Forms live in email. Schedules live in photos.</p></div>
+  </div>
+  <p class="big" style="margin-top:32px">The director is the software. That is the job nobody signed up for — and the reason clubs bleed families every season.</p>
+  <div class="foot"><span>The Problem</span><span>02</span></div>
+</section>
+
+<!-- 3 PRODUCT -->
+<section class="slide">
+  <h2>One platform. <em>Everything a club needs to collect.</em></h2>
+  <ul>
+    <li><b>Registration &amp; payments</b> — cards with fees shown up front, offline (Zelle/Venmo/cash) recorded in one tap, payment plans, discounts.</li>
+    <li><b>Documents</b> — waivers and medical forms signed digitally; payment is blocked until every required signature is in.</li>
+    <li><b>Rosters &amp; families</b> — invite links, parents enter their own data, multiple kids on one account.</li>
+    <li><b>Team chat &amp; notifications</b> — routed to the right parents, not a group-chat soup.</li>
+    <li><b>Live streaming</b> — every game, home or away, with live viewer counts. Branded club apps on iOS and Android.</li>
+    <li><b>Agent support desk</b> — an AI desk answers parents and flags only what needs a human.</li>
+  </ul>
+  <div class="foot"><span>The Product</span><span>03</span></div>
+</section>
+
+<!-- 4 TRACTION -->
+<section class="slide dark">
+  <h2>Traction: <em>real clubs, real money, in production</em></h2>
+  <table>
+    <tr><th></th><th>Lakeshow 3SSB</th><th>Fury Hoops</th></tr>
+    <tr><td>Collected through the platform</td><td class="n">$456,014</td><td class="n">$43,900 in first 3 days</td></tr>
+    <tr><td>Paid registrations</td><td class="n">476 players paid</td><td class="n">26</td></tr>
+    <tr><td>Players / teams</td><td class="n">508 / 54</td><td class="n">36 / 10</td></tr>
+    <tr><td>Live since</td><td>Jun 24, 2026</td><td>Aug 31, 2026</td></tr>
+  </table>
+  <p style="margin-top:24px">Platform revenue: <b style="color:var(--volt)">$23,307</b> in fees · refunds to date: <b>$1</b>. Methodology: one program counted per player, payment plans counted as collected installments only. Re-verified from the production database, as of Sep 3, 2026.</p>
+  <div class="foot"><span>Traction</span><span>04</span></div>
+</section>
+
+<!-- 5 FURY STORY -->
+<section class="slide">
+  <h2>Fury: <em>from first text to $43,900 in 3 days</em></h2>
+  <div class="row">
+    <div class="card"><div class="num">Aug 15</div><p>Director texts us "manage my club." No account, no data.</p></div>
+    <div class="card"><div class="num">Aug 29</div><p>Rosters imported: 9 teams, 92 players, every parent linked. Docs digitized.</p></div>
+    <div class="card"><div class="num">Aug 31</div><p>Registration goes live. 72 families enrolled. First Zelle + card payments same day.</p></div>
+    <div class="card"><div class="num">Sep 3</div><p>$43,900 collected. 26 paid registrations. Zero support tickets lost.</p></div>
+  </div>
+  <p class="big" style="margin-top:30px">Onboarding a club used to be a quarter of integration work. We just did it in <b>17 days</b>, while the club kept coaching.</p>
+  <div class="foot"><span>Case Study</span><span>05</span></div>
+</section>
+
+<!-- 6 TAM -->
+<section class="slide dark">
+  <h2>The math: <em>what one club proved</em></h2>
+  <div class="row">
+    <div class="card"><div class="num">$456K</div><div class="lbl">One club, 10 weeks</div><div class="sub">Lakeshow 3SSB, collected payments</div></div>
+    <div class="card"><div class="num">3.2%</div><div class="lbl">Our take rate</div><div class="sub">Platform fee on processed volume</div></div>
+    <div class="card"><div class="num">$14.6K</div><div class="lbl">Revenue from that club</div><div class="sub">In ten weeks, from one director's network</div></div>
+  </div>
+  <p class="big" style="margin-top:32px">There are thousands of AAU and club programs in the US. <b style="color:var(--volt)">100 Lakeshows = $45M+ collected per season → ~$1.5M of platform revenue, recurring.</b></p>
+  <div class="foot"><span>TAM</span><span>06</span></div>
+</section>
+
+<!-- 7 MARKET -->
+<section class="slide">
+  <h2>Market: <em>everyone's wallet is already open</em></h2>
+  <p class="big">US families spend tens of billions a year on youth sports — fees, registrations, camps. The software layer that moves that money is worth the same order of magnitude.</p>
+  <div class="row" style="margin-top:28px">
+    <div class="card"><div class="big">Incumbents</div><p>SportsEngine, TeamSnap, LeagueApps — built for leagues and directories, not for a director who needs money collected this week.</p></div>
+    <div class="card"><div class="big">Our wedge</div><p>We go where they are weak: white-glove onboarding, club-branded apps, an agent desk that answers parents at 11pm, and streaming built in.</p></div>
+  </div>
+  <p style="margin-top:24px; font-size:16px">Market sizing to be footnoted with third-party sources in the diligence appendix.</p>
+  <div class="foot"><span>Market</span><span>07</span></div>
+</section>
+
+<!-- 8 BUSINESS MODEL -->
+<section class="slide">
+  <h2>Model: <em>we get paid when the club gets paid</em></h2>
+  <ul>
+    <li><b>~3.2% platform fee</b> on every dollar processed — card or offline, collected or planned.</li>
+    <li><b>Card processing</b> runs through the club's own Stripe account; the club owns its money, we own the rails.</li>
+    <li><b>Zero onboarding cost</b> for learning-partner clubs: free platform for life in exchange for feedback, case-study rights, and being the showcase other directors visit.</li>
+    <li>Every new club is a sales call we don't make — directors see Fury and Lakeshow running and ask to join.</li>
+  </ul>
+  <div class="foot"><span>Business Model</span><span>08</span></div>
+</section>
+
+<!-- 9 GTM -->
+<section class="slide">
+  <h2>Go-to-market: <em>directors sell directors</em></h2>
+  <div class="row">
+    <div class="card"><div class="num">1</div><div class="lbl">Land the ambitious club</div><div class="sub">The one already grinding on Instagram at midnight. Onboarding is done for them — sheets in, app out.</div></div>
+    <div class="card"><div class="num">2</div><div class="lbl">Make them the showcase</div><div class="sub">Their logo on the app store, their games streamed, their registration day frictionless.</div></div>
+    <div class="card"><div class="num">3</div><div class="lbl">Harvest the network</div><div class="sub">Rival directors sit in the same gyms. Fury's director introduced us to the next club before we asked.</div></div>
+  </div>
+  <p class="big" style="margin-top:28px">Pipeline is already moving: two more clubs in active demos this week.</p>
+  <div class="foot"><span>Go-To-Market</span><span>09</span></div>
+</section>
+
+<!-- 10 COMPETITION -->
+<section class="slide">
+  <h2>Why we win the next club</h2>
+  <table>
+    <tr><th></th><th>AppSpace</th><th>Legacy platforms</th></tr>
+    <tr><td>Onboarding</td><td class="n">Days, done for the club</td><td>Self-serve setup, weeks of DIY</td></tr>
+    <tr><td>Money</td><td class="n">Cards + offline + plans, one ledger</td><td>Card only, or nothing</td></tr>
+    <tr><td>Support</td><td class="n">AI desk + human, 24/7</td><td>Tickets and hold music</td></tr>
+    <tr><td>Brand</td><td class="n">The club's own app</td><td>One shared marketplace</td></tr>
+    <tr><td>Streaming</td><td class="n">Built in, every game</td><td>Add-on, if at all</td></tr>
+  </table>
+  <div class="foot"><span>Competition</span><span>10</span></div>
+</section>
+
+<!-- 11 ROADMAP -->
+<section class="slide">
+  <h2>Where the season goes</h2>
+  <ul>
+    <li><b>Now:</b> two live clubs, revenue flowing, agent desk answering parents across two clubs from one inbox.</li>
+    <li><b>This quarter:</b> 5 clubs live; self-serve club setup; uniforms and gear checkout on the same rails.</li>
+    <li><b>Next:</b> league and tournament mode — multi-club events are where the volume compounds; highlight clips auto-cut from streams for every kid.</li>
+    <li><b>Moat:</b> every season of payments, rosters and documents a club runs on us makes switching cost a rebuild of their entire operation.</li>
+  </ul>
+  <div class="foot"><span>Roadmap</span><span>11</span></div>
+</section>
+
+<!-- 12 TEAM -->
+<section class="slide">
+  <h2>Team: <em>builders who shipped while selling</em></h2>
+  <div class="row">
+    <div class="card"><div class="big">Steven Ojo — Founder &amp; CEO</div><p>Engineer. Built the platform end to end and closed the first clubs himself. Ran operations for club sports long enough to feel the pain personally.</p></div>
+    <div class="card"><div class="big">Sonia — CMO</div><p>Runs marketing, lead generation and the investor narrative; owns the ad funnels filling the demo calendar.</p></div>
+    <div class="card"><div class="big">Stephanie — Design</div><p>Owns product design and every club-branded surface, from app icons to payment pages.</p></div>
+  </div>
+  <p style="margin-top:24px; font-size:16px">Full bios and backgrounds available in the diligence pack; AI support-desk and agent tooling built in-house.</p>
+  <div class="foot"><span>Team</span><span>12</span></div>
+</section>
+
+<!-- 13 ASK -->
+<section class="slide dark">
+  <h2>The ask</h2>
+  <p class="big">We are raising from angels who know youth sports or two-sided marketplaces. Capital goes to: more club onboardings, the self-serve setup flow, and streaming infrastructure for league scale.</p>
+  <div class="row" style="margin-top:28px">
+    <div class="card"><div class="num">$456K</div><div class="lbl">Collected · 2 clubs</div></div>
+    <div class="card"><div class="num">$23.3K</div><div class="lbl">Platform revenue</div></div>
+    <div class="card"><div class="num">100×</div><div class="lbl">The multiplier in front of us</div></div>
+  </div>
+  <p class="big" style="margin-top:32px">Fury went from a text message to $43,900 in 17 days. <b style="color:var(--volt)">Come find the next 100 Lakeshows with us.</b></p>
+  <p style="margin-top:20px">Steven Ojo · steven@affirmi.tv</p>
+  <div class="foot"><span>Thank You</span><span>13</span></div>
+</section>
+
+</body>
+</html>
